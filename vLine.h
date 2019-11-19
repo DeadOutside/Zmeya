@@ -1,11 +1,13 @@
 #ifndef VLINE_H
 #define VLINE_H
 #include <list>
+#include "Figure.h"
 #include "Tochka.h"
 
-class vLine
+using namespace std;
+
+class vLine : public Figure
 {
-    list<Tochka> pList;
 public:
     vLine(short int yUp,short int yDown,short int x, char sym)
     {
@@ -16,12 +18,6 @@ public:
 
         }
     }
-    void Draw()
-    {
-        for(Tochka p: pList)
-        {
-           p.Draw();
-        }
-    }
+
 };
 #endif // VLINE_H

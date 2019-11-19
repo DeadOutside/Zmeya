@@ -1,13 +1,14 @@
 #ifndef HLINE_H
 #define HLINE_H
+#include "Figure.h"
 #include "Tochka.h"
 #include <list>
 
 using namespace std;
 
-class hLine
+class hLine : public Figure
 {
-    list<Tochka> pList;
+
 public:
     hLine(short int xLeft,short int xRight,short int y, char sym)
     {
@@ -16,13 +17,6 @@ public:
             Tochka p(x,y,sym);
             pList.push_back(p);
 
-        }
-    }
-    void Draw()
-    {
-        for(Tochka p: pList)
-        {
-           p.Draw();
         }
     }
 };

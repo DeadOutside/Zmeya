@@ -8,6 +8,8 @@ SOURCES += \
 
 HEADERS += \
     Figure.h \
+    Snake.h \
     Tochka.h \
+    direction.h \
     hLine.h \
     vLine.h
