@@ -4,7 +4,11 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        Figure.cpp \
+        hline.cpp \
+        main.cpp \
+        snake.cpp \
+        tochka.cpp
 
 HEADERS += \
     Figure.h \

@@ -10,13 +10,6 @@ class Figure
 protected:
     list<Tochka> pList;
 public:
-    void Draw()
-    {
-        for(Tochka p: pList)
-        {
-           p.Draw();
-        }
-    }
-
+    void Draw();
 };
 #endif // LIST_H

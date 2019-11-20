@@ -13,10 +13,7 @@ class Tochka
     char sym;
 public:
     Tochka();
-    Tochka(short int _x, short int _y, char _sym)
-    {
-        x = _x; y = _y; sym = _sym;
-    }
+    Tochka(short int _x, short int _y, char _sym);
     Tochka(Tochka *p)
     {
         x = p->x;
@@ -47,4 +44,5 @@ public:
         Draw();
     }
 };
+
 #endif // TOCHKA_H

@@ -26,8 +26,11 @@ int main()
     lLine.Draw();
     rLine.Draw();
     //ЗМІЙКА
-    Tochka p(4,5,'*');
+    Tochka p(2,2,'*');
     Snake snake(p,5,RIGHT);
     snake.Draw();
+    for(int i = 0;i<10;++i){
+    snake.Move();
+    }
     return 0;
 }
