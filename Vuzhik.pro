@@ -8,7 +8,8 @@ SOURCES += \
         hline.cpp \
         main.cpp \
         snake.cpp \
-        tochka.cpp
+        tochka.cpp \
+        vline.cpp
 
 HEADERS += \
     Figure.h \

@@ -1,7 +1,3 @@
-#include <list>
-#include "Tochka.h"
-#include "direction.h"
-#include "Figure.h"
 #include "Snake.h"
 
 Snake::Snake(Tochka tail, int length, Direction _direction)
@@ -31,4 +27,15 @@ void Snake::Move()
 
     tail.Clear();
     head.Draw();
+}
+
+void Snake::Handle(int key){
+    if (key == 75)
+        direction = LEFT;
+    else if (key == 77)
+        direction = RIGHT;
+    else if (key == 72)
+        direction = UP;
+    else if(key == 80)
+        direction = DOWN;
 }

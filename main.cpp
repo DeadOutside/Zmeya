@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include <list>
+#include <conio.h>
 #include "Tochka.h"
 #include "hLine.h"
 #include "vLine.h"
@@ -29,8 +30,16 @@ int main()
     Tochka p(2,2,'*');
     Snake snake(p,5,RIGHT);
     snake.Draw();
-    for(int i = 0;i<10;++i){
-    snake.Move();
+    int key = 1;
+    while(true)
+    {
+        if(kbhit())
+        {
+            key = getch();
+            snake.Handle(key);
+        }
+        Sleep(150);
+        snake.Move();
     }
     return 0;
 }

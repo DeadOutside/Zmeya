@@ -9,15 +9,6 @@ using namespace std;
 class vLine : public Figure
 {
 public:
-    vLine(short int yUp,short int yDown,short int x, char sym)
-    {
-        for(short int y=yUp;y<=yDown;y++)
-        {
-            Tochka p(x,y,sym);
-            pList.push_back(p);
-
-        }
-    }
-
+    vLine(short int yUp,short int yDown,short int x, char sym);
 };
 #endif // VLINE_H

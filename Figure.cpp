@@ -1,4 +1,3 @@
-#include <list>
 #include "Figure.h"
 
 using namespace std;

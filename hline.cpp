@@ -1,7 +1,4 @@
 #include "hLine.h"
-#include <list>
-#include "Tochka.h"
-#include "Figure.h"
 
 using namespace std;
 

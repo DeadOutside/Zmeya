@@ -6,11 +6,12 @@
 #include "Figure.h"
 
 class Snake : public Figure
-{
-    Direction direction;
+{ 
 public:
+    Direction direction;
     Snake(Tochka tail, int length, Direction _direction);
     Tochka GetNextPoint();
     void Move();
+    void Handle(int key);
 };
 #endif // SNAKE_H
