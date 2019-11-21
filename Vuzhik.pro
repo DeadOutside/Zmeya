@@ -5,8 +5,10 @@ CONFIG -= qt
 
 SOURCES += \
         Figure.cpp \
+        foodcreator.cpp \
         hline.cpp \
         main.cpp \
+        score.cpp \
         snake.cpp \
         tochka.cpp \
         vline.cpp
@@ -16,5 +18,7 @@ HEADERS += \
     Snake.h \
     Tochka.h \
     direction.h \
+    foodcreator.h \
     hLine.h \
+    score.h \
     vLine.h

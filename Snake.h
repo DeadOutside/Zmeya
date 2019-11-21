@@ -13,5 +13,6 @@ public:
     Tochka GetNextPoint();
     void Move();
     void Handle(int key);
+    bool Eat(Tochka food);
 };
 #endif // SNAKE_H

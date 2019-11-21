@@ -39,3 +39,13 @@ void Snake::Handle(int key){
     else if(key == 80)
         direction = DOWN;
 }
+
+bool Snake::Eat(Tochka food){
+    Tochka head = GetNextPoint();
+    if(head.IsHit(food)){
+        food.sym = head.sym;
+        pList.push_back(food);
+        return true;
+    }
+    else return false;
+}

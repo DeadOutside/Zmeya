@@ -37,3 +37,7 @@ void Tochka::Clear()
     sym = ' ';
     Draw();
 }
+
+bool Tochka::IsHit(Tochka p){
+    return p.x == this->x && p.y == this->y;
+}

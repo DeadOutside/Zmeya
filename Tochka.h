@@ -9,15 +9,17 @@ using namespace std;
 
 class Tochka
 {
+    public:
     short int x, y;
-    char sym;
-public:
+
     Tochka();
     Tochka(short int _x, short int _y, char _sym);
     Tochka(Tochka *p);
+    char sym;
     void Move(short int offset, Direction direction);
     void Draw();
     void Clear();
+    bool IsHit(Tochka p);
 };
 
 #endif // TOCHKA_H
